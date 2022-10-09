@@ -15,6 +15,9 @@ span {
     color: rgb(9, 145, 199);
 }
 
+.logo {
+    font-size: 25px;
+}
 
 nav ul li {
     list-style: none;
@@ -26,12 +29,28 @@ nav ul li {
     }
 }
 
+.listitem {
+    font-weight: bold;
+
+    & a:hover {
+        color: purple;
+    }
+
+    & a:active {
+        color: darkblue;
+    }
+}
+
 .burgericon {
     display: none;
     color: white;
 
     &:active {
         color: purple;
+    }
+    
+    &:hover {
+        color: aqua;
     }
 
 }
@@ -54,6 +73,18 @@ nav {
 
 
 @media screen and (max-width:600px){
+
+    .burgericon {
+    display: block;
+    cursor: pointer;
+    }
+
+    .listitem {
+        display: none;
+    }
+}
+
+@media screen and (max-width:320px){
 
     .burgericon {
     display: block;

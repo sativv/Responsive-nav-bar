@@ -12,6 +12,10 @@ span {
   color: rgb(9, 145, 199);
 }
 
+.logo {
+  font-size: 25px;
+}
+
 nav ul li {
   list-style: none;
   display: inline-block;
@@ -22,12 +26,25 @@ nav ul li a {
   text-decoration: none;
 }
 
+.listitem {
+  font-weight: bold;
+}
+.listitem a:hover {
+  color: purple;
+}
+.listitem a:active {
+  color: darkblue;
+}
+
 .burgericon {
   display: none;
   color: white;
 }
 .burgericon:active {
   color: purple;
+}
+.burgericon:hover {
+  color: aqua;
 }
 
 nav {
@@ -51,6 +68,16 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+  .burgericon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .listitem {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
   .burgericon {
     display: block;
     cursor: pointer;
